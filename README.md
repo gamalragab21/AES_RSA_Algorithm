@@ -23,7 +23,6 @@ After generating the RSA key pair, the private key should be kept securely, poss
 ## Usage
 1. Clone this repository to your local machine.
 2. Ensure you have Python 3.x installed.
-3. Install the required dependencies (if any) using `pip install -r requirements.txt`.
 4. Run the provided Python script to generate the RSA key pair and create the keystore with the encrypted private key.
 
 ## Dependencies
