@@ -7,10 +7,6 @@ This repository demonstrates how to use RSA and AES algorithms to create a secur
 1. [Introduction](#introduction)
 2. [RSA Key Generation](#rsa-key-generation)
 3. [AES Key Storage](#aes-key-storage)
-4. [Usage](#usage)
-5. [Dependencies](#dependencies)
-6. [License](#license)
-
 ## Introduction
 In modern cryptographic systems, it is crucial to securely generate, store, and manage cryptographic keys. This repository demonstrates a two-step approach to achieve this. First, we use the RSA algorithm to generate a cryptographically secure key pair consisting of a public key and a private key. Then, we use the AES algorithm to encrypt and securely store the generated cryptographic key (or any sensitive data) in a keystore file.
 
@@ -19,15 +15,6 @@ The `generate_rsa_key_pair` function in the provided Python script generates an 
 
 ## AES Key Storage
 After generating the RSA key pair, the private key should be kept securely, possibly in a hardware security module (HSM) or a secure database. For the purpose of this demonstration, we'll create an AES key to encrypt the private key and store it in a keystore file. The `generate_aes_key` function generates a secure AES key using the PBKDF2HMAC algorithm and a strong password. The AES key is then used to encrypt the RSA private key before storing it in the keystore file.
-
-## Usage
-1. Clone this repository to your local machine.
-2. Ensure you have Python 3.x installed.
-4. Run the provided Python script to generate the RSA key pair and create the keystore with the encrypted private key.
-
-## Dependencies
-This project relies on the following Python libraries:
-- `cryptography` for RSA and AES key generation and encryption.
 
 ---
 
